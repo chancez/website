@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhml" xml:lang="en" lang="en">
+<head>
+    <title>{{ site.title }}</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div id="header">
+      <div class="container">
+
+        <div class="row">
+          <div class="span4">
+            <header>
+              <h1><a href="/">Chance Zibolski</a></h1>
+            <header>
+          </div>
+
+          <div class="span7 pull-right" >
+            <nav>
+              <ul class="menu">
+              {%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
+                {%- if nav.url == page.url %}
+                <li><a href="{{ nav.url }}" class="active">{{ nav.title }}</a></li>
+                {%- else %}
+                <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+                {%- endif %}
+              {%- endfor %}
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+
+        <hr />
+
+      </div>
+    </div>
+
+    <div class="main container">
+        <div class="base-image">
+            {% if page.image %}
+                <div class="page_pic {{ page.image.where }}" style="
+                        {% if page.image.width %}max-width: {{page.image.width}};{% endif %}
+                        {% if page.image.height %}max-height: {{page.image.height}};{% endif %}">
+                    <img src="{{ page.image.url }}" />
+                    {% if page.image.caption %}
+                        <span>{{ page.image.caption }}</span>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <hr />
+          <span id="about_site" class="span4">
+            This website was made using <a href="http://github.com/mythmon/wok">Wok</a>
+          </span>
+          <span id="github" class="span4">
+            My <a href="http://github.com/ecnahc515/" target="_blank">Github</a>
+          </span>
+          <span id="copyright" class="span4">
+            &copy; Copyright <a title="Copyright" href="/">Chance Zibolski</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

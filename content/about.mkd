@@ -1,0 +1,32 @@
+title: About
+slug: about
+tags: [_nav]
+url: /about/
+nav_weight: 1
+
+image:
+    url: /img/TOR_crop.jpg
+    where: right
+    caption: Me at PIR's Taste of Racing
+
+---
+
+Hello
+====
+I am Chance Zibolski and I am a computer science major at [Oregon State University][osu]. I am sophomore, who is working his way up in the world of web development.
+
+Work
+----
+I work as an IT Consultant at the [OSU Computer Helpdesk][helpdesk]. When I'm not answering people's questions, I work on our internal web tools, and management systems.
+
+Hobbies and Free Time
+====
+
+###Coding
+This is my passion, I love to program, and I love to tinker. I like to call myself an aspiring web developer, as it is really what I enjoy. The web is such a vast and growing entity, and I love to be a part of it. I really enjoy programming in Python, C, and Javascript.
+
+###Motorcycles
+Believe it or not I own a 2004 Suzuki SV650s. It is the second motorcycle I've owned, my first being my 2010 Ninja 250r. I really enjoy hitting the twisties around Portland, Corvallis and sometimes I'll partake in group rides in toward Detroit Lake, Windy River Rd, and anywhere else with a good amount of curvy road.
+
+[osu]:http://oregonstate.edu/
+[helpdesk]:http://oregonstate.edu/is/tss/och/

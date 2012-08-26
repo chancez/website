@@ -1,0 +1,9 @@
+title: Home
+type: home
+url: /
+tags: [_nav]
+nav_weight: 0
+---
+Welcome
+----
+This is where I hope to regularly update my friends, family, and others of where I am at life. As this is new for me, its a bit bare; but hopefully soon it will become part of me to update this!
