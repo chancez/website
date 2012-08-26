@@ -16,24 +16,24 @@
       <div class="container">
 
         <div class="row">
-          <div class="span4">
+          <div class="span3">
             <header>
               <h1><a href="/">Chance Zibolski</a></h1>
             <header>
           </div>
 
-          <div class="span7 pull-right" >
-            <nav>
-              <ul class="menu">
+          <div class="span9 pull-right">
+            <div class="navbar">
+              <ul class="nav nav-pills pull-right">
               {%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
                 {%- if nav.url == page.url %}
-                <li><a href="{{ nav.url }}" class="active">{{ nav.title }}</a></li>
+                <li class="active"><a href="{{ nav.url }}" class="active">{{ nav.title }}</a></li>
                 {%- else %}
                 <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
                 {%- endif %}
               {%- endfor %}
               </ul>
-            </nav>
+            </div>
           </div>
 
         </div>
