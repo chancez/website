@@ -28,6 +28,11 @@ p { margin: 0 0 15px 0; }
 h1, h2 { font-weight: bold; font-size: 24px; margin: 0 0 15px 0; color: #203351; }
 h3, h4, h5  { font-weight: bold; font-size: 18px; margin: 0 0 15px 0; color: #203351; }
 
+img 
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 /* Start Wrapper Container */
 
