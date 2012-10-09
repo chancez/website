@@ -19,5 +19,5 @@ Here's a rough preview.
 
 [TradrPost]:http://github.com/ecnahc515/TradrPost/
 [node]:http://nodejs.org
-[backbone]:backbonejs.org
-[mongo]:mongodb.org
+[backbone]:http://backbonejs.org
+[mongo]:http://mongodb.org
