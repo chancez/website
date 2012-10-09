@@ -18,6 +18,6 @@ Here's a rough preview.
 ![Image of TradrPost](/img/TradrPost.png)
 
 [TradrPost]:http://github.com/ecnahc515/TradrPost/
-[node]:[http://nodejs.org]
-[backbone]:[backbonejs.org]
-[mongo]:[mongodb.org]
+[node]:http://nodejs.org
+[backbone]:backbonejs.org
+[mongo]:mongodb.org
