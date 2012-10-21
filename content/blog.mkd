@@ -1,0 +1,19 @@
+title: Blog
+type: list-view
+slug: blog
+url: /blog/{page}/
+
+tags: [_nav]
+nav_weight: 1
+
+index:
+    height: 200
+    char_limit: 1200
+
+pagination:
+    list: page.subpages
+    limit: 5
+    sort_key: datetime
+    sort_reverse: True
+
+---

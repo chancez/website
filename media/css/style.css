@@ -28,28 +28,39 @@ p { margin: 0 0 15px 0; }
 h1, h2 { font-weight: bold; font-size: 24px; margin: 0 0 15px 0; color: #203351; }
 h3, h4, h5  { font-weight: bold; font-size: 18px; margin: 0 0 15px 0; color: #203351; }
 
-img 
+img
 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-/* Start Wrapper Container */
-
-#wrapper
+#insert_blog
 {
-  height: auto;
-  min-height: 100%;
+  margin-top: 20px;
 }
 
-/* End Wrapper Container */
+.blog_controls #title
+{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.blog_controls #pages
+{
+  font-size: 18px;
+}
+
+.blog_controls button
+{
+  margin-bottom: 5px;
+}
 
 
 /* Start Header Styles */
 
 #header
 {
-  margin-top: .5em;
+  margin-top: 25px;
 }
 #header hr
 {    
@@ -57,38 +68,15 @@ img
   margin-bottom: .5em;
 }
 
-header
+#maintitle
 {
-  padding: 0px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 20px;
 }
-header h1
-{
-	font-size: 24;
-	font-weight: bold;
-	letter-spacing: -2px;
-}
-
 
 /* End Header Styles */
 
-
-
-/* Start Main Styles */
-
-section#main
-{
-	width: 940px;
-	line-height: 24px;
-}
-
-section#content
-{
-	/*width: 560px;*/
-  min-height:100%;
-  position: relative;
-}
-
-/* End Main Styles */
 
 /* Image Styles */
 
@@ -135,7 +123,7 @@ section#content
 
 #footer
 {
-  margin-top: .5em;
+  margin-top: 60px;
   font-size: 12px;
 }
 #footer hr

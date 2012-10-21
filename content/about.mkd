@@ -2,7 +2,7 @@ title: About
 slug: about
 tags: [_nav]
 url: /about/
-nav_weight: 1
+nav_weight: 2
 
 image:
     url: /img/TOR_crop.jpg
@@ -23,10 +23,13 @@ Hobbies and Free Time
 ====
 
 ###Coding
-This is my passion, I love to program, and I love to tinker. I like to call myself an aspiring web developer, as it is really what I enjoy. The web is such a vast and growing entity, and I love to be a part of it. I really enjoy programming in Python, C, and Javascript.
+This is my passion. I am an avid **Linux user**, and I love the Open Source world. Some of my favorite languages are **Python** and **Javascript** (and more recently, [CoffeeScript][]). I also really like the frameworks which use these languages. [Backbone.js][backbone] is my most recent framework, and it is what I am using to write my most recent [project][projects] in.
 
 ###Motorcycles
 Believe it or not I own a 2004 Suzuki SV650s. It is the second motorcycle I've owned, my first being my 2010 Ninja 250r. I really enjoy hitting the twisties around Portland, Corvallis and sometimes I'll partake in group rides in toward Detroit Lake, Windy River Rd, and anywhere else with a good amount of curvy road.
 
 [osu]:http://oregonstate.edu/
 [helpdesk]:http://oregonstate.edu/is/tss/och/
+[projects]:/projects/
+[CoffeeScript]:http://coffeescript.org/
+[backbone]:http://backbonejs.org

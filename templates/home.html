@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="hero-unit">
   {{ page.content }}
-</div>
+  <hr>
+
+  <div id="insert_blog"></div>
+
+  <script type="text/javascript">
+    $(function (){
+      $("#insert_blog").load('/blog/ #blog_content');
+    });
+  </script>
+
 {% endblock %}
 

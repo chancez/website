@@ -2,7 +2,7 @@ title: Projects
 slug: project
 tags: [_nav]
 url: /projects/
-nav_weight: 2
+nav_weight: 3
 
 ---
 

@@ -1,84 +1,88 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <head>
-    <title>{{ site.title }}</title>
+    <title>{{ site.title }} - {{ page.title }}</title>
 
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/list-view.css">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <script type="text/javascript" src="/js/jquery-1.8.2.min.js" ></script>
+    <script type="text/javascript" src="/js/blog_nav.js"></script>
+    {% block extrahead %}{% endblock %}
 </head>
 
 <body>
-  <div id="wrapper">
+<div id="header">
+  <div class="container">
 
-    <div id="header">
-      <div class="container">
-
-        <div class="row">
-          <div class="span3">
-            <header>
-              <h1><a href="/">Chance Zibolski</a></h1>
-            <header>
-          </div>
-
-          <div class="span9 pull-right">
-            <div class="navbar">
-              <ul class="nav nav-pills pull-right">
-              {%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
-                {%- if nav.url == page.url %}
-                <li class="active"><a href="{{ nav.url }}" class="active">{{ nav.title }}</a></li>
-                {%- else %}
-                <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
-                {%- endif %}
-              {%- endfor %}
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-        <hr />
-
+    <div class="row">
+      <div class="span5">
+          <span id="maintitle">
+            <a href="/">Chance Zibolski</a>
+          </span>
       </div>
-    </div>
 
-    <div class="main container">
-        <div class="base-image">
-            {% if page.image %}
-                <div class="page_pic {{ page.image.where }}" style="
-                        {% if page.image.width %}max-width: {{page.image.width}};{% endif %}
-                        {% if page.image.height %}max-height: {{page.image.height}};{% endif %}">
-                    <img src="{{ page.image.url }}" />
-                    {% if page.image.caption %}
-                        <span>{{ page.image.caption }}</span>
-                    {% endif %}
-                </div>
-            {% endif %}
-        </div>
-
-        {% block content %}
-        {% endblock %}
-    </div>
-
-
-    <div id="footer">
-      <div class="container">
-        <div class="row">
-          <hr />
-          <span id="about_site" class="span4">
-            This website was made using <a href="http://github.com/mythmon/wok">Wok</a>
-          </span>
-          <span id="github" class="span4">
-            My <a href="http://github.com/ecnahc515/" target="_blank">Github</a>
-          </span>
-          <span id="copyright" class="span4">
-            &copy; Copyright <a title="Copyright" href="/">Chance Zibolski</a>
-          </span>
+      <div class="span7 pull-right">
+        <div class="navbar">
+          <ul class="nav nav-pills pull-right">
+          {%- for nav in site.tags['_nav']|sort(attribute='nav_weight') %}
+            {%- if nav.url == page.url %}
+            <li class="active"><a href="{{ nav.url }}" class="active">{{ nav.title }}</a></li>
+            {%- else %}
+            <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
+            {%- endif %}
+          {%- endfor %}
+          </ul>
         </div>
       </div>
+
     </div>
+
+    <hr />
 
   </div>
+</div>
+
+<div class="main container">
+  {% block page_header %}{% endblock %}
+
+    <div class="base-image">
+        {% if page.image %}
+            <div class="page_pic {{ page.image.where }}" style="
+                    {% if page.image.width %}max-width: {{page.image.width}};{% endif %}
+                    {% if page.image.height %}max-height: {{page.image.height}};{% endif %}">
+                <img src="{{ page.image.url }}" />
+                {% if page.image.caption %}
+                    <span>{{ page.image.caption }}</span>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+<div id="footer">
+  <div class="container">
+    <div class="row">
+      <hr />
+      <span id="about_site" class="span4">
+        This website was made using <a href="http://github.com/mythmon/wok">Wok</a>
+      </span>
+      <span id="github" class="span4">
+        My <a href="http://github.com/ecnahc515/" target="_blank">Github</a>
+      </span>
+      <span id="copyright" class="span4">
+        &copy; Copyright <a title="Copyright" href="/">Chance Zibolski</a>
+      </span>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

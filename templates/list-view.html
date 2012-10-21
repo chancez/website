@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{# Set defaults #}
+{% set min_height = 150 %}
+{% set char_limit = 300 %}
+
+{% if page.index %}
+    {% if page.index.height %}
+        {% set min_height = page.index.height %}
+    {% endif %}
+    {% if page.index.char_limit %}
+        {% set char_limit = page.index.char_limit %}
+    {% endif %}
+    {% if page.index.char_limit %}
+        {% set char_limit = page.index.char_limit %}
+    {% endif %}
+{% endif %}
+
+{# Render list #}
+
+{% block content %}
+<div id="blog_content">
+<div id="grab">
+
+  {% if page.pagination %}
+      {% if page.pagination.num_pages > 1 %}
+        <span class="blog_controls">
+          <span id="title">Blog Posts</span>
+          <span id="pages">
+            - Page {{ page.pagination.cur_page }} of {{ page.pagination.num_pages }}
+          </span>
+        {% if page.pagination.prev_page %}
+            <button class="blog_nav" href="{{ page.pagination.prev_page.url }}">Previous</button>
+        {% endif %}
+        {% if page.pagination.next_page %}
+            <button class="blog_nav" href="{{ page.pagination.next_page.url }}">Next</button>
+        {% endif %}
+        </span></br>
+      {% endif %}
+  {% endif %}
+  {{ page.content }}
+
+  <div class="list-view">
+      {% for subpage in pagination.page_items %}
+
+          <div class="item">
+
+              {% if not loop.first %}
+                  <hr/>
+              {% endif %}
+
+              <div class="heading">
+                  <h2 class="title"><a href="{{subpage.url}}">{{subpage.title}}</a></h2>
+                  <p id="metadata">
+                      {% if subpage.datetime %}
+                          {{ subpage.datetime.strftime("%A %B %d, %Y")}}
+                      {% endif %}
+                  </p>
+              </div>
+
+              <div class="preview">
+                  <span>
+                      {% if subpage.image %}
+                          <img style="float:left; display:inline" src="{{subpage.image.url}}"/>
+                      {% endif %}
+
+                      {% if subpage.preview %}
+                          {{ subpage.preview }}
+                      {% else %}
+                          {{subpage.content|truncate(length=char_limit, end="<a href="+subpage.url+">...more</a>")}}
+                      {% endif %}
+                  </span>
+              </div>
+
+          </div>
+
+      {% endfor %}
+  </div>
+
+</div>
+</div>
+
+
+{% endblock %}

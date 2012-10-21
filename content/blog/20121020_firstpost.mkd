@@ -1,0 +1,22 @@
+title: "Blog away!"
+type: blog
+category: blog
+author: Chance Zibolski
+
+slug: "firstpost"
+
+date: 2012-10-15
+
+---
+My very first blog post! How exciting, I've always wanted to have a blog, but I
+didnt want to use something like blogspot or the like, so I decided to go with
+something that worked well with [Wok][]. I looked around and found that [Kevin
+Ngo's](http://ngokevin.com) set up was pretty much exactly what I wanted. I
+borrowed most of his blog [code](http://github.com/ngokevin/ngokevin/) and
+basically dropped it in, and I've already made some changes! So far I'm really
+happy with it.
+
+Stay tuned, I plan to update this regularly, and include things that im doing in my
+free time. Thanks for reading!
+
+[Wok]: http://github.com/mythmon/wok/
