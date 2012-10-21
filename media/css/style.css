@@ -1,37 +1,23 @@
-/* Template Layout CSS */
-
-body
+.navbar .brand
 {
-	/* background: #D4D0C9;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #4B4C4D;
-	padding: 20px;
-	font-size: 14px;
-  */
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  font-size: 34px;
+  font-weight: bold;
 }
 
-a
+.navbar-inverse .nav .active > a
 {
-  /*color: #203351;*/
-  font-weight:bold;
+  border-bottom: 3px solid #33B5E5;
+  background: url('/img/gradient-glossy.png') repeat-x;
 }
-a:hover
+
+.navbar-inverse .nav .active > a:hover
 {
-  /*color: #5C5E61;*/
-  font-weight:bold;
+  border-bottom: 3px solid #33B5E5;
 }
-p { margin: 0 0 15px 0; }
 
-h1, h2 { font-weight: bold; font-size: 24px; margin: 0 0 15px 0; color: #203351; }
-h3, h4, h5  { font-weight: bold; font-size: 18px; margin: 0 0 15px 0; color: #203351; }
-
-img
+.nav li > a:hover
 {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 #insert_blog
