@@ -1,0 +1,53 @@
+title: "CodeDay Portland!"
+type: blog
+category: blog
+author: Chance Zibolski
+
+slug: "codeday"
+
+date: 2012-11-05
+
+image:
+  url: http://i.imgur.com/B01ph.png
+  where: top
+
+---
+
+This weekend I attended my first ever codeday/hackathon. The event was hosted by
+[StudentRND][srnd], and was at [Urban Airship][ua]. This was the first time
+StudentRND has hosted an event in Portland, and it was awesome. I drove up with 2
+friends from Corvallis to Portland on Friday, and Saturday we arrived at Urban
+Airship for a 25 hour coding marathon (Yay day lights savings time).
+
+The event started off with presentation from a local entrepreneur; [Ken
+Westin][kwestin], creator of [GadgetTrak][gt]. Shortly after, each person got to
+pitch their ideas, and from there we formed teams while eating pizza. I ended up
+pitching my [TradrPost][tradr] idea, however my Co-Worker [Cezary Wojcik][cezary];
+who attended the event had the idea to create a new version of John Conways "[Game
+of Life][GoL]." The idea was that instead of only having dead or alive tiles, we
+have multiple terrains (tiles) which a population can live in, and then the user
+can decide where to promote population growth by clicking on the tiles. These few
+ideas where the basis of our game.
+
+From the beginning there were some people interested. Our final team consisted of
+about 6 high school students, Cezary, and myself. Cezary and I wanted to do make
+the game using HTML5 and the canvas element. This was my first time using any of
+the new HTML5 features, but I can say that I learned a lot. I also found out how
+25 hours can feel both very short, and very long at the same time. In the end
+though, we were able to get the game working, and present it to the judges. While
+we never intended for the game to work on mobile devices, it did end up working for
+our judges iPads quite well actually, and we were awarded best mobile app. If you
+want to try the game yourself, you can find [Game of Life v2.0 here][GoL2].
+
+For more information about the CodeDay visit [StudentRND's][srnd] Portland CodeDay
+page [here][codeday].
+
+[srnd]: http://studentrnd.org/
+[ua]: http://urbanairship.com/
+[kwestin]: http://about.me/kwestin
+[gt]: http://www.gadgettrak.com/
+[tradr]: /projects/#TradrPost
+[cezary]: http://cezarywojcik.com/
+[GoL]: http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+[GoL2]: http://chancez.net/gameoflife2/
+[codeday]: http://portland.codeday.org/

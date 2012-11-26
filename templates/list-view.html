@@ -71,7 +71,7 @@
                       {% if subpage.preview %}
                           {{ subpage.preview }}
                       {% else %}
-                          {{subpage.content|truncate(length=char_limit, end="<a href="+subpage.url+">...more</a>")}}
+                          {{subpage.content|truncate(length=char_limit, end="<a href='"+subpage.url+"'>...more</a>")}}
                       {% endif %}
                   </span>
               </div>
