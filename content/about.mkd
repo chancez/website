@@ -11,25 +11,40 @@ image:
 
 ---
 
-Hello
+A little bit about me.
 ====
-I am Chance Zibolski and I am a computer science major at [Oregon State University][osu]. I am sophomore, who is working his way up in the world of web development.
+My name is Chance Zibolski and I am a computer science student at [Oregon State
+University][osu]. I am an avid [open source](http://en.wikipedia.org/wiki/Open_source)
+enthusiast and Linux user.
 
-Work
-----
-I work as an IT Consultant at the [OSU Computer Helpdesk][helpdesk]. When I'm not answering people's questions, I work on our internal web tools, and management systems.
+I work at the [OSU Open Source Lab][osl], which is a nonprofit organization which
+offers hosting services to open source [projects](http://osuosl.org/services/hosting/communities).
+Some of these projects include [Apache](http://www.apache.org/),
+[Drupal](http://www.drupal.org), and [Freenode](http://freenode.net/).
+
+Another big part of the OSL is the advancement of open source technologies. Part of
+the way we do this is not only hosting, but through software development. One of
+our big projects that I work on is [Ganeti Web Manager][gwm]. Ganeti Web Manager is
+a Django based, web frontend for [Ganeti][ganeti].
 
 Hobbies and Free Time
 ====
 
-###Coding
-This is my passion. I am an avid **Linux user**, and I love the Open Source world. Some of my favorite languages are **Python** and **Javascript** (and more recently, [CoffeeScript][]). I also really like the frameworks which use these languages. [Backbone.js][backbone] is my most recent framework, and it is what I am using to write my most recent [project][projects] in.
+####Coding
+Of course I code, but what about in my free time? Well currently I'm mostly working
+on small projects that will broaden my horizons. I've slowly been learning Haskell
+and going through [Learn You a Haskell](http://learnyouahaskell.com/). I'm also
+working on a couple of IRC bots for fun, and also in hope to write something that
+new programmers (some of which are my friends!) can hack on, without feeling
+overwhelmed by project size.
 
-###Motorcycles
-Believe it or not I own a 2004 Suzuki SV650s. It is the second motorcycle I've owned, my first being my 2010 Ninja 250r. I really enjoy hitting the twisties around Portland, Corvallis and sometimes I'll partake in group rides in toward Detroit Lake, Windy River Rd, and anywhere else with a good amount of curvy road.
+####Motorcycles
+Many people don't realize, but this is one of my passions. I got my first
+motorcycle when I was 17 and it was a nice lil' 2010 Ninja 250. Currently I've
+upgraded to a 2004 SV650, and its my baby. I love to go out to the coast, and up
+the mountains with it, and I do not think I can describe how great the feeling is.
 
 [osu]:http://oregonstate.edu/
-[helpdesk]:http://oregonstate.edu/is/tss/och/
-[projects]:/projects/
-[CoffeeScript]:http://coffeescript.org/
-[backbone]:http://backbonejs.org
+[osl]:http://osuosl.org
+[gwm]:https://code.osuosl.org/projects/ganeti-webmgr
+[ganeti]:http://code.google.com/p/ganeti/

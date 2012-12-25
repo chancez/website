@@ -1,4 +1,4 @@
 #! /bin/bash
 
 wok
-rsync -avz ./output/ cloud:public_html/chancez.net/
+rsync -avz ./output/ cloud:public_html/mysite/
